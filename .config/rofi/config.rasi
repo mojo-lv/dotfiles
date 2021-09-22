@@ -1,0 +1,13 @@
+configuration{
+    modi: "drun";
+    width: 40;
+    columns: 1;
+    lines: 5;
+    show-icons: false;
+    display-drun: "Run";
+    location: 0;
+    separator-style: "solid";
+    disable-history: false;
+    hide-scrollbar: true;
+	theme: "~/.config/rofi/simple.rasi";
+}

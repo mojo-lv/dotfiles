@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=xfce4-appfinder
+Exec=i3-msg workspace 0:openSUSE;xfce4-appfinder
+Icon=~/.local/share/applications/icons/AppFinder.png
+Terminal=false
+Type=Application
