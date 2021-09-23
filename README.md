@@ -36,6 +36,15 @@ sudo cpupower frequency-set -g powersave    # 省电模式
 sudo cpupower frequency-set -g performance  # 高性能模式
 ```
 
+### lightdm使用lightdm-slick-greeter
+
+```shell
+# 安装lightdm-slick-greeter
+sudo zypper in lightdm-slick-greeter
+# 修改默认greeter
+sudo update-alternatives --config lightdm-default-greeter.desktop
+```
+
 ## 软件
 
 ```shell
@@ -74,14 +83,5 @@ font-manager
 
 ```shell
 /var/cache/zypp/packages/
-```
-
-### lightdm使用lightdm-slick-greeter
-
-```shell
-# 安装lightdm-slick-greeter
-sudo zypper in lightdm-slick-greeter
-# 修改默认greeter
-sudo update-alternatives --config lightdm-default-greeter.desktop
 ```
 

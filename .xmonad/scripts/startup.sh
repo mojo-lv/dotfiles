@@ -45,9 +45,7 @@ if [ $WINDOWMANAGER == "xmonad" ]; then
     if pgrep conky; then
         pkill conky
     fi
-	sleep 2
 	exec ~/scripts/DailyPoem.sh &
-	sleep 2
     for conf in $HOME/.config/conky/*.conf
 	do
 		exec conky -q -c $conf &
