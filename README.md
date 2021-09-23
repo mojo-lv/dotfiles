@@ -66,7 +66,6 @@ zathura
 evince
 Visual Studio Code
 Motrix
-Koodo-Reader
 GIMP
 VMware Workstation
 Qv2ray
