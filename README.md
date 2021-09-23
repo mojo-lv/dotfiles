@@ -55,7 +55,7 @@ tint2
 xfce4-terminal
 thunar
 flameshot
-proxychains-ng(不支持ping，用curl测试)
+proxychains-ng
 blueman
 NetworkManager-applet
 gebaar-libinput
@@ -85,3 +85,9 @@ font-manager
 /var/cache/zypp/packages/
 ```
 
+### proxychains-ng代理
+
+```shell
+# proxychains-ng 不支持ping，用curl测试
+# 配置文件/etc/proxychains.conf
+```
