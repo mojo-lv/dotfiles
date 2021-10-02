@@ -18,6 +18,22 @@ UUID=612F-BEFE /home/VM exfat defaults,dmask=0022,fmask=0133,uid=1000,gid=100 0 
 Exec=xfce4-terminal -e "bash -c 'sudo -i /etc/init.d/vmware start;'" && /usr/bin/vmware %U
 ```
 
+### 屏蔽NVIDIA显卡
+
+```shell
+# 创建/etc/systemd/system/kill-nvidia-gpu.service
+# 运行sudo systemctl enable kill-nvidia-gpu.service
+[Unit]
+Description=Kill Nvidia GPU
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh -c "/usr/bin/echo 1 > /sys/bus/pci/devices/0000:01:00.0/remove"
+
+[Install]
+WantedBy=multi-user.target
+```
+
 ### 睿频
 
 ```shell

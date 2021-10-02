@@ -17,7 +17,7 @@ gebaard -b
 _tp="$(xinput list | grep Touchpad)"
 _tp=${_tp#*id=}
 _tp=${_tp%%[slave*}
-xinput set-prop $_tp 315 1
+xinput set-prop $_tp "libinput Natural Scrolling Enabled" 1
 
 #------------------------------------------------------------------------------
 # xmonad
