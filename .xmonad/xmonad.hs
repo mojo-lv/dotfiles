@@ -126,7 +126,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_p     ), spawn "dmenu_run")
 
     -- launch chrome
-    , ((modm .|. shiftMask, xK_c     ), spawn "google-chrome --disable-gpu --disable-software-rasterizer")
+    , ((modm .|. shiftMask, xK_c     ), spawn "google-chrome")
 
     -- launch thunar
     , ((modm .|. shiftMask, xK_e     ), spawn "thunar")
