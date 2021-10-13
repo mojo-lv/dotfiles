@@ -1,6 +1,6 @@
 # dotfiles
 
-openSUSE Tumbleweed with xmonad
+openSUSE Tumbleweed with xmonad and icewm
 
 ## 设置
 
@@ -21,6 +21,9 @@ Exec=xfce4-terminal -e "bash -c 'sudo -i /etc/init.d/vmware start;'" && /usr/bin
 ### 屏蔽NVIDIA显卡
 
 ```shell
+# /etc/modprobe.d/blacklist.conf
+blacklist nouveau
+
 # 创建/etc/systemd/system/kill-nvidia-gpu.service
 # 运行sudo systemctl enable kill-nvidia-gpu.service
 [Unit]
@@ -80,16 +83,16 @@ ranger
 feh
 zathura
 evince
-Visual Studio Code
 Motrix
 GIMP
-VMware Workstation
 Qv2ray
 vlc
 file-roller
 thunar-plugin-archive
 hack-fonts
 font-manager
+Visual Studio Code
+VMware Workstation
 ```
 
 ## 其他
