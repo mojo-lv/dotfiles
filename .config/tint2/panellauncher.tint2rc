@@ -139,7 +139,7 @@ launcher_item_app = /usr/share/applications/code.desktop
 launcher_item_app = /usr/share/applications/org.gnome.Evince.desktop
 launcher_item_app = /usr/share/applications/gimp.desktop
 launcher_item_app = /usr/share/applications/qv2ray.desktop
-launcher_item_app = /usr/share/applications/vmware-workstation.desktop
+launcher_item_app = ~/.local/share/applications/vmware-workstation.desktop
 
 #-------------------------------------
 # Separator 1
